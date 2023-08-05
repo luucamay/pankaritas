@@ -1,12 +1,30 @@
 import Image from 'next/image'
 import styles from './page.module.css'
+import Link from 'next/link'
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <label htmlFor="userText">What is the text for this audio:</label>
-      <textarea id="userText" name="userText" rows="33" cols="66" />
-      <button>Generate audio</button>
+      <ul>
+        <li>
+          <Link href='cinco'>Cinco Siglos</Link>
+        </li>
+        <li>
+          <Link href='flor'>Flor de cactus</Link>
+        </li>
+        <li>
+          <Link href='jachaj'>Jacha Jardin</Link>
+        </li>
+        <li>
+          <Link href='jachau'>Jacha Uru</Link>
+        </li>
+        <li>
+          <Link href='siempre'>Siempre Vivas</Link>
+        </li>
+        <li>
+          <Link href="bartolina">Bartolina</Link>
+        </li>
+      </ul>
     </main>
   )
 }
