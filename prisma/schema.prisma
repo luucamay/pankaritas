@@ -16,7 +16,7 @@ model Article {
   title        String
   url          String?
   description  String?
-  durationSecs Int
+  durationSecs Int?
   downloaded   Boolean @default(false)
   author       User?   @relation(fields: [authorId], references: [id])
   authorId     String?
